@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id='demo3'></p>
+    <h1 id="demo4"></h1>
+    <button onclick="document.body.style.background='red'"></button>
+    <button onclick="this.innerHTML=Date()">Click me.</button>
+<button onclick="myFunction()">Click Me</button>
+   <button onclick="displyColor()"></button> 
+    <input type="text" id="fullname"/>
+    
+    <script>
+        function test(value){
+            return value;
+        }
+        document.getElementById("demo1").innerText= test(34)
+;
+
+        function toCelsius(f){
+            return (5/9)*(f-32)
+        }
+        document.getElementById("demo2").innerText=toCelsius(88);
+
+const obj={name:"suma",age:34}
+document.getElementById("demo2").innerHTML=`${obj.name} and he is ${obj.age} years old`;
+
+function myFunction(){
+    var text1="suma";
+    var text2="latha";
+    var text3=text1+text2;
+    document.getElementById("demo4").innerHTML=text3;
+}
+function displyColor(){
+    document.body.style.background="blue";
+}
+
+document.getElementById("fullname").addEventListener("focus",change)
+function chang(){
+    
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>finding palindrome of a number</title>
+    <script type="text/javascript">
+   var x=+prompt("enter your number")
+   let rem; let reverse=0;
+while(x>0){
+rem=x%10;
+reverse=reverse*10+rem;
+x=parseInt(x/10);
+}
+document.write('<h1>Reverse number is '+ reverse)
+
+    if(x==reverse)
+    document.write('<br> it is a palindrom')
+else
+    document.write('<br> it is not a palindrom')
+
+    </script>
+    
+    </head>
+    <body bgcolor="blue">
+
+    </body>
+</html>

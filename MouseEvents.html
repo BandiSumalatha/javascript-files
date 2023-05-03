@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onmouseover="this.style.backgroundColor='red'" onmouseleave="this.style.backgroundColor='yellow'">hello world</h1>
+<input type="text" id="fname" name="firstname" placeholder="enter fname" value="sumalatha" onfocus="this.style.backgroundColor='yellow'" onblur="this.style.backgroundColor='black'"/>
+<input type="text" id="lname" name="lastname" />
+<script>
+  let lname=document.getElementById("lname")
+  lname.onfocus=function(){
+    lname.style.background="green"
+  }
+  lname.onblur=function(){
+    lname.style.background="white"
+  }
+</script>
+</body>
+
+
+</html>
